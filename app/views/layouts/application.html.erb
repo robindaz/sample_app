@@ -1,8 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Ruby on Rails Tutorial Sample App | <%= @title %></title>
+<title><%= @title %></title>
 <%= csrf_meta_tag %>
+<%= javascript_include_tag 'rails', 'jquery', 'jquery-ui', 'application' %>
+<%= stylesheet_link_tag 'ui-lightness/jquery-ui-1.8.9.custom', :media => 'screen' %>
+<!--
+<%= stylesheet_link_tag 'sample-app', :media => 'screen' %>
+//-->
 </head>
 <body>
 <%= yield %>
